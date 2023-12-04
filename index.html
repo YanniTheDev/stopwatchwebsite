@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="stopwatch.svg">
+</head>
+<body>
+    <div class="information-panel">
+        <header class="information-header">
+            <div></div>
+            <h1>Information</h1>
+            <p id="close-information">X</p>
+        </header>
+        <div class="information-text">
+            <p><b>R</b> - Reset timer</p>
+            <p><b>Space</b> - Start and pause timer</p>
+        </div>
+    </div>
+
+    <header class="time-container">
+        <p id="time">19:39</p>
+        <p id="open-information"><b>ⓘ</b></p>
+    </header>
+
+    <div class="stopwatch-status">
+        <p id="stopwatch-status-text">Timing...</p>
+    </div>
+
+    <div class="stopwatch-container">
+        <div id="stopwatch">00:00:00.000</div>
+        <div class="timer-button-container">
+            <button id="reset-button" class="timer-button">Reset</button>
+            <button id="start-button" class="timer-button">Start</button>
+            <button id="pause-button" class="timer-button">Pause</button>
+        </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
