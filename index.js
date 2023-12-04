@@ -118,14 +118,14 @@ setInterval(() => {
 }, 1000);
 
 
-let informationButton = document.querySelector("#open-information");
-let informationPanel = document.querySelector(".information-panel");
+const informationButton = document.querySelector("#open-information");
+const informationPanel = document.querySelector(".information-panel");
 
 informationButton.onclick = () => {
     informationPanel.style.display = "block";
 }
 
-let closeInformation = document.querySelector("#close-information");
+const closeInformation = document.querySelector("#close-information");
 
 closeInformation.onclick = () => {
     informationPanel.style.display = "none";
